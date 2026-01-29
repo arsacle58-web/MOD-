@@ -1,0 +1,28 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:block": {
+		"description": {
+			"identifier": "arsenal:rifle_m4a1_empty",
+			"menu_category": {
+				"category": "none",
+				"is_hidden_in_commands": true
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.arsenal.rifle_m4a1_v",
+			"minecraft:material_instances": {
+				"*": { "texture": "arsenal:rifle_m4a1", "render_method": "alpha_test", "ambient_occlusion": false }
+			},
+			"minecraft:collision_box": true,
+			"minecraft:selection_box": true,
+			"minecraft:light_dampening": 0,
+			"minecraft:placement_filter": { "conditions": [ {
+				"allowed_faces": [ "down" ],
+				"block_filter": [ "minecraft:air" ]
+			} ] },
+			"minecraft:destructible_by_explosion": { "explosion_resistance": 0.0 },
+			"minecraft:destructible_by_mining": { "seconds_to_destroy": 0.0 },
+			"minecraft:map_color": "#000000"
+		}
+	}
+}

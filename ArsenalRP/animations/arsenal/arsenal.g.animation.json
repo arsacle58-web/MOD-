@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.arsenal.1_hand.third_person": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": ["-88 + q.target_x_rotation", "-9 + (math.max(-40, q.target_y_rotation))", 0]
+				}
+			}
+		},
+		"animation.arsenal.2_hands.third_person": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": ["-88 + q.target_x_rotation", "40 + (math.min(20, q.target_y_rotation))", 0],
+					"position": [-1.2, 0, -1.4]
+				},
+				"rightArm": {
+					"rotation": ["-88 + q.target_x_rotation", "-9 + (math.max(-40, q.target_y_rotation))", 0],
+					"position": [0.1, 0, 0.8]
+				}
+			}
+		},
+		"animation.player.move.arms": {
+			"loop": true,
+			"bones": {
+				"leftarm": {
+					"rotation": ["q.equipped_item_any_tag('slot.weapon.mainhand','arsenal:two_hands') ? 0 : variable.tcos0", 0, 0]
+				},
+				"rightarm": {
+					"rotation": ["q.equipped_item_any_tag('slot.weapon.mainhand','arsenal:one_hand','arsenal:two_hands') ? 30 : (-variable.tcos0)", 0, 0]
+				}
+			}
+		}
+	}
+}

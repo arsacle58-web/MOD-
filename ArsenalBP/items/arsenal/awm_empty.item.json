@@ -1,0 +1,37 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:item": {
+		"description": {
+			"identifier": "arsenal:awm_empty",
+			"menu_category": {
+				"category": "none",
+				"is_hidden_in_commands": true
+			}
+		},
+		"components": {
+			"minecraft:tags": { "tags": [ "arsenal:two_hands" ] },
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_modifiers": {
+				"movement_modifier": 1,
+				"use_duration": 1000.0
+			},
+			"minecraft:cooldown": {
+				"category": "arsenal:awm_empty",
+				"duration": 2.01
+			},
+			"minecraft:use_animation":"none",
+			"minecraft:block_placer": {
+				"block": "arsenal:awm_empty",
+				"replace_block_item": true
+			},
+			"minecraft:display_name": {
+				"value": "item.arsenal:awm"
+			},
+			"arsenal:reload": {
+				"reload_time": 2.01,
+				"sound": "arsenal:awm_reload",
+				"ammo": "arsenal:ammo_rifle"
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"format_version": "1.20.30",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "arsenal:ammo_assault_rifle"
+		},
+		"tags": [ "crafting_table" ],
+		"pattern": [
+			" # ",
+			"#G#",
+			"#G#"
+		],
+		"key": {
+			"#": { "item": "minecraft:iron_nugget" },
+			"G": { "item": "minecraft:gunpowder" }
+		},
+		"unlock": [
+			{ "item": "minecraft:iron_nugget" },
+			{ "item": "minecraft:gunpowder" }
+		],
+		"result": {
+			"item": "arsenal:ammo_assault_rifle",
+			"count": 1
+		}
+	}
+}

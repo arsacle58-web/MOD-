@@ -1,0 +1,37 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:item": {
+		"description": {
+			"identifier": "arsenal:revolver_empty",
+			"menu_category": {
+				"category": "none",
+				"is_hidden_in_commands": true
+			}
+		},
+		"components": {
+			"minecraft:tags": { "tags": [ "arsenal:one_hand" ] },
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_modifiers": {
+				"movement_modifier": 1,
+				"use_duration": 1000.0
+			},
+			"minecraft:cooldown": {
+				"category": "arsenal:revolver_empty",
+				"duration": 2.93
+			},
+			"minecraft:use_animation": "none",
+			"minecraft:block_placer": {
+				"block": "arsenal:revolver_empty",
+				"replace_block_item": true
+			},
+			"minecraft:display_name": {
+				"value": "item.arsenal:revolver"
+			},
+			"arsenal:reload": {
+				"reload_time": 2.93,
+				"sound": "arsenal:revolver_reload",
+				"ammo": "arsenal:ammo_pistol"
+			}
+		}
+	}
+}

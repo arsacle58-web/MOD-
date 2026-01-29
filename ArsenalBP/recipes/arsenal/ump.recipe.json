@@ -1,0 +1,30 @@
+{
+	"format_version": "1.20.30",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "arsenal:ump"
+		},
+		"tags": [ "crafting_table" ],
+		"pattern": [
+			" ##",
+			"##A",
+			"SI "
+		],
+		"key": {
+			"#": { "item": "minecraft:iron_ingot" },
+			"S": { "item": "minecraft:stick" },
+			"I": { "item": "minecraft:iron_nugget" },
+			"A": { "item": "arsenal:ammo_assault_rifle" }
+		},
+		"unlock": [
+			{ "item": "minecraft:iron_ingot" },
+			{ "item": "minecraft:stick" },
+			{ "item": "minecraft:iron_nugget" },
+			{ "item": "arsenal:ammo_assault_rifle" }
+		],
+		"result": {
+			"item": "arsenal:ump",
+			"count": 1
+		}
+	}
+}

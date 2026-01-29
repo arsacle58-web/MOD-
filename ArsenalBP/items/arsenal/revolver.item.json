@@ -1,0 +1,38 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:item": {
+		"description": {
+			"identifier": "arsenal:revolver",
+			"menu_category": {
+				"category": "equipment",
+				"group": "arsenal:guns"
+			}
+		},
+		"components": {
+			"minecraft:tags": { "tags": [ "arsenal:arsenal_gun", "arsenal:one_hand" ] },
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_modifiers": {
+				"movement_modifier": 1,
+				"use_duration": 999.0
+			},
+			"minecraft:cooldown": {
+				"category": "arsenal_revolver",
+				"duration": 0.75
+			},
+			"minecraft:use_animation":"none",
+			"minecraft:block_placer": {
+				"block": "arsenal:revolver",
+				"replace_block_item": true
+			},
+			"arsenal:gun": {
+				"projectile": "arsenal:damage_8",
+				"projectileAds": "arsenal:damage_11",
+				"fire_rate": 15,
+				"max_ammo": 6,
+				"sound": "arsenal:revolver_fire",
+				"camerashake": "0.13 0.1 rotational",
+				"camerashakeAds": "0.10 0.1 rotational"
+			}
+		}
+	}
+}

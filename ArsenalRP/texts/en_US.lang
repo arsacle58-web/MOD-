@@ -1,0 +1,16 @@
+﻿item.arsenal:awm=AWM Sniper Rifle
+item.arsenal:mac10=MAC-10
+item.arsenal:revolver=Revolver
+item.arsenal:rifle_m4a1=M4A1
+item.arsenal:thompson=Thompson SMG
+item.arsenal:ump=UMP-45
+
+item.arsenal:ammo_pistol=Pistol Ammo
+item.arsenal:ammo_assault_rifle=Assault Rifle Ammo
+item.arsenal:ammo_rifle=Rifle Ammo
+
+entity.arsenal:bullet.name=Bullet
+%entity.arsenal:bullet.name=Bullet
+
+actiobar.arsenal.no_ammo=Out of ammo
+actionbar.arsenal.ammo=Ammo: %1

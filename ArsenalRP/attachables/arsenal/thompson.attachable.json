@@ -1,0 +1,41 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "arsenal:thompson",
+			"render_controllers": ["controller.render.default"],
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/arsenal/thompson"
+			},
+			"geometry": {
+				"default": "geometry.arsenal.thompson"
+			},
+			"animations": {
+				"first_person_hold": "animation.arsenal.thompson.first_person_hold",
+				"third_person_hold": "animation.arsenal.thompson.third_person_hold",
+				"first_person_fix": "animation.arsenal.thompson.first_person_fix",
+				"shoot.fp": "animation.arsenal.thompson.shoot.fp",
+				"ads_start": "animation.arsenal.thompson.ads_start",
+				"ads_keep": "animation.arsenal.thompson.ads_keep",
+				"ads_end": "animation.arsenal.thompson.ads_end",
+				"ads_controller": "controller.animation.arsenal.ads_controller",
+				"shoot_controller": "controller.animation.arsenal.shoot_controller"
+			},
+			"particle_effects": {
+				"flash": "arsenal:flash"
+			},
+			"scripts": {
+				"animate": [
+					{ "first_person_hold": "c.is_first_person" },
+					{ "third_person_hold": "!c.is_first_person"},
+					{ "ads_controller": "c.is_first_person" },
+					{ "first_person_fix": "c.is_first_person" },
+					"shoot_controller"
+				]
+			}
+		}
+	}
+}

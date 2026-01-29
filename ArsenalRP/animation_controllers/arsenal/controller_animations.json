@@ -1,0 +1,81 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.arsenal.reload_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "reload": "q.is_using_item && q.state_time > 0.1" }
+					]
+				},
+				"reload": {
+					"animations": [ "reload" ],
+					"transitions": [
+						{ "default": "q.all_animations_finished || (!v.has_item && q.can_fly)" }
+					]
+				}
+			}
+		},
+		"controller.animation.arsenal.shoot_controller_tp": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "shoot": "q.is_using_item" }
+					]
+				},
+				"shoot": {
+					"animations": [ "shoot.tp" ],
+					"transitions": [
+						{ "default": "!q.is_using_item && q.all_animations_finished" }
+					]
+				}
+			}
+		},
+		"controller.animation.arsenal.shoot_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "shoot": "q.is_using_item" }
+					]
+				},
+				"shoot": {
+					"animations": [ "shoot.fp" ],
+					"transitions": [
+						{ "default": "!q.is_using_item && q.all_animations_finished" }
+					]
+				}
+			}
+		},
+		"controller.animation.arsenal.ads_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "ads_start": "q.is_sneaking" }
+					]
+				},
+				"ads_start": {
+					"animations": [ "ads_start" ],
+					"transitions": [
+						{ "ads_end": "!q.is_sneaking" },
+						{ "ads_keep": "q.is_sneaking && q.all_animations_finished" }
+					],
+					"blend_transition": 0.2
+				},
+				"ads_keep": {
+					"animations": [ "ads_keep" ],
+					"transitions": [
+						{ "ads_end": "!q.is_sneaking" }
+					]
+				},
+				"ads_end": {
+					"animations": [ "ads_end" ],
+					"transitions": [
+						{ "ads_start": "q.is_sneaking" },
+						{ "default": "!q.is_sneaking && q.all_animations_finished" }
+					],
+					"blend_transition": 0.2
+				}
+			}
+		}
+	}
+}

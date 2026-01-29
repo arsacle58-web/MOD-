@@ -1,0 +1,41 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "arsenal:mac10",
+			"render_controllers": ["controller.render.default"],
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/arsenal/mac10"
+			},
+			"geometry": {
+				"default": "geometry.arsenal.mac10"
+			},
+			"animations": {
+				"first_person_hold": "animation.arsenal.mac10.first_person_hold",
+				"third_person_hold": "animation.arsenal.mac10.third_person_hold",
+				"first_person_fix": "animation.arsenal.mac10.first_person_fix",
+				"shoot.fp": "animation.arsenal.mac10.shoot.fp",
+				"ads_start": "animation.arsenal.mac10.ads_start",
+				"ads_keep": "animation.arsenal.mac10.ads_keep",
+				"ads_end": "animation.arsenal.mac10.ads_end",
+				"ads_controller": "controller.animation.arsenal.ads_controller",
+				"shoot_controller": "controller.animation.arsenal.shoot_controller"
+			},
+			"particle_effects": {
+				"flash": "arsenal:flash"
+			},
+			"scripts": {
+				"animate": [
+					{ "first_person_hold": "c.is_first_person" },
+					{ "third_person_hold": "!c.is_first_person"},
+					{ "ads_controller": "c.is_first_person" },
+					{ "first_person_fix": "c.is_first_person" },
+					"shoot_controller"
+				]
+			}
+		}
+	}
+}

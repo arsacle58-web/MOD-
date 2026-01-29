@@ -1,0 +1,127 @@
+{
+	"format_version" : "1.20.20",
+	"sound_definitions" : {
+		"arsenal:m4a1_fire" : {
+			"__use_legacy_max_distance" : "true",
+			"category" : "neutral",
+			"max_distance" : null,
+			"min_distance" : null,
+			"sounds" : [
+				{ "name": "sounds/arsenal/m4a1_fire", "pitch": 1.0 }
+			]
+		},
+		"arsenal:m4a1_reload" : {
+			"__use_legacy_max_distance" : "true",
+			"category" : "ui",
+			"max_distance" : null,
+			"min_distance" : null,
+			"sounds" : [
+				{ "name": "sounds/arsenal/m4a1_reload", "pitch": 1.0 }
+			]
+		},
+		"arsenal:mac10_fire" : {
+			"__use_legacy_max_distance" : "true",
+			"category" : "neutral",
+			"max_distance" : null,
+			"min_distance" : null,
+			"sounds" : [
+				{ "name": "sounds/arsenal/mac10_fire", "pitch": 1.0 }
+			]
+		},
+		"arsenal:mac10_reload" : {
+			"__use_legacy_max_distance" : "true",
+			"category" : "ui",
+			"max_distance" : null,
+			"min_distance" : null,
+			"sounds" : [
+				{ "name": "sounds/arsenal/mac10_reload", "pitch": 1.0 }
+			]
+		},
+		"arsenal:thompson_fire" : {
+			"__use_legacy_max_distance" : "true",
+			"category" : "neutral",
+			"max_distance" : null,
+			"min_distance" : null,
+			"sounds" : [
+				{ "name": "sounds/arsenal/thompson_fire", "pitch": 1.0 }
+			]
+		},
+		"arsenal:thompson_reload" : {
+			"__use_legacy_max_distance" : "true",
+			"category" : "ui",
+			"max_distance" : null,
+			"min_distance" : null,
+			"sounds" : [
+				{ "name": "sounds/arsenal/thompson_reload", "pitch": 1.0 }
+			]
+		},
+		"arsenal:ump_fire" : {
+			"__use_legacy_max_distance" : "true",
+			"category" : "neutral",
+			"max_distance" : null,
+			"min_distance" : null,
+			"sounds" : [
+				{ "name": "sounds/arsenal/ump_fire", "pitch": 1.0 }
+			]
+		},
+		"arsenal:ump_reload" : {
+			"__use_legacy_max_distance" : "true",
+			"category" : "ui",
+			"max_distance" : null,
+			"min_distance" : null,
+			"sounds" : [
+				{ "name": "sounds/arsenal/ump_reload", "pitch": 1.0 }
+			]
+		},
+		"arsenal:revolver_fire" : {
+			"__use_legacy_max_distance" : "true",
+			"category" : "neutral",
+			"max_distance" : null,
+			"min_distance" : null,
+			"sounds" : [
+				{ "name": "sounds/arsenal/revolver_fire", "pitch": 1.0 }
+			]
+		},
+		"arsenal:revolver_reload" : {
+			"__use_legacy_max_distance" : "true",
+			"category" : "ui",
+			"max_distance" : null,
+			"min_distance" : null,
+			"sounds" : [
+				{ "name": "sounds/arsenal/revolver_reload", "pitch": 1.0 }
+			]
+		},
+		"arsenal:awm_fire" : {
+			"__use_legacy_max_distance" : "true",
+			"category" : "neutral",
+			"max_distance" : null,
+			"min_distance" : null,
+			"sounds" : [
+				{ "name": "sounds/arsenal/awm_fire", "pitch": 1.0 }
+			]
+		},
+		"arsenal:awm_reload" : {
+			"__use_legacy_max_distance" : "true",
+			"category" : "ui",
+			"max_distance" : null,
+			"min_distance" : null,
+			"sounds" : [
+				{ "name": "sounds/arsenal/awm_reload", "pitch": 1.0 }
+			]
+		},
+		"arsenal:bullet_hit" : {
+			"__use_legacy_max_distance" : "true",
+			"category" : "neutral",
+			"max_distance" : null,
+			"min_distance" : null,
+			"sounds" : [
+				{ "name": "sounds/arsenal/bullet_hit", "pitch": 1.1 },
+				{ "name": "sounds/arsenal/bullet_hit", "pitch": 1.0 },
+				{ "name": "sounds/arsenal/bullet_hit", "pitch": 0.9 },
+				{ "name": "sounds/arsenal/bullet_hit2", "pitch": 1.1 },
+				{ "name": "sounds/arsenal/bullet_hit2", "pitch": 1.0 },
+				{ "name": "sounds/arsenal/bullet_hit2", "pitch": 0.9 }
+			]
+		}
+	}
+}

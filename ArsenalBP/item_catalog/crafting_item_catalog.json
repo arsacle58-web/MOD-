@@ -1,0 +1,29 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:crafting_items_catalog": {
+		"categories": [
+			{
+				"category_name": "equipment",
+				"groups": [
+					{
+						"group_identifier": {
+							"icon": "arsenal:awm",
+							"name": "arsenal:guns"
+						},
+						"items": [
+							"arsenal:revolver",
+							"arsenal:mac10",
+							"arsenal:thompson",
+							"arsenal:ump",
+							"arsenal:rifle_m4a1",
+							"arsenal:awm",
+							"arsenal:ammo_pistol",
+							"arsenal:ammo_assault_rifle",
+							"arsenal:ammo_rifle"
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:item": {
+		"description": {
+			"identifier": "arsenal:awm",
+			"menu_category": {
+				"category": "equipment",
+				"group": "arsenal:guns"
+			}
+		},
+		"components": {
+			"minecraft:tags": { "tags": [ "arsenal:arsenal_gun", "arsenal:two_hands" ] },
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_modifiers": {
+				"movement_modifier": 1,
+				"use_duration": 1000.0
+			},
+			"minecraft:cooldown": {
+				"category": "arsenal:awm",
+				"duration": 1.51
+			},
+			"minecraft:use_animation":"none",
+			"minecraft:block_placer": {
+				"block": "arsenal:awm",
+				"replace_block_item": true
+			},
+			"arsenal:gun": {
+				"projectile": "arsenal:damage_20",
+				"projectileAds": "arsenal:damage_24",
+				"fire_rate": 30,
+				"max_ammo": 7,
+				"sound": "arsenal:awm_fire",
+				"camerashake": "0.18 0.1 rotational",
+				"camerashakeAds": "0.15 0.1 rotational"
+			}
+		}
+	}
+}

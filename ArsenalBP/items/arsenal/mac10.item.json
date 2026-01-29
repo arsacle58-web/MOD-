@@ -1,0 +1,38 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:item": {
+		"description": {
+			"identifier": "arsenal:mac10",
+			"menu_category": {
+				"category": "equipment",
+				"group": "arsenal:guns"
+			}
+		},
+		"components": {
+			"minecraft:tags": { "tags": [ "arsenal:arsenal_gun", "arsenal:two_hands" ] },
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_modifiers": {
+				"movement_modifier": 1,
+				"use_duration": 1000.0
+			},
+			"minecraft:cooldown": {
+				"category": "arsenal:mac10",
+				"duration": 0.1
+			},
+			"minecraft:use_animation":"none",
+			"minecraft:block_placer": {
+				"block": "arsenal:mac10",
+				"replace_block_item": true
+			},
+			"arsenal:gun": {
+				"projectile": "arsenal:damage_5",
+				"projectileAds": "arsenal:damage_7",
+				"fire_rate": 2,
+				"max_ammo": 32,
+				"sound": "arsenal:mac10_fire",
+				"camerashake": "0.06 0.1 rotational",
+				"camerashakeAds": "0.04 0.1 rotational"
+			}
+		}
+	}
+}

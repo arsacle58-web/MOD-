@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.30",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "arsenal:awm"
+		},
+		"tags": [ "crafting_table" ],
+		"pattern": [
+			"G##",
+			"##I",
+			"#SA"
+		],
+		"key": {
+			"#": { "item": "minecraft:iron_ingot" },
+			"G": { "item": "minecraft:spyglass" },
+			"S": { "item": "minecraft:stick" },
+			"I": { "item": "minecraft:iron_nugget" },
+			"A": { "item": "arsenal:ammo_rifle" }
+		},
+		"unlock": [
+			{ "item": "minecraft:iron_ingot" },
+			{ "item": "minecraft:spyglass" },
+			{ "item": "minecraft:stick" },
+			{ "item": "minecraft:iron_nugget" },
+			{ "item": "arsenal:ammo_rifle" }
+		],
+		"result": {
+			"item": "arsenal:awm",
+			"count": 1
+		}
+	}
+}

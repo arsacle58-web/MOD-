@@ -1,0 +1,44 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "arsenal:awm",
+			"render_controllers": ["controller.render.default"],
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/arsenal/awm"
+			},
+			"geometry": {
+				"default": "geometry.arsenal.awm"
+			},
+			"animations": {
+				"first_person_hold": "animation.arsenal.awm.first_person_hold",
+				"third_person_hold": "animation.arsenal.awm.third_person_hold",
+				"first_person_fix": "animation.arsenal.awm.first_person_fix",
+				"shoot.fp": "animation.arsenal.awm.shoot.fp",
+				"shoot.tp": "animation.arsenal.awm.shoot.tp",
+				"ads_start": "animation.arsenal.awm.ads_start",
+				"ads_keep": "animation.arsenal.awm.ads_keep",
+				"ads_end": "animation.arsenal.awm.ads_end",
+				"ads_controller": "controller.animation.arsenal.ads_controller",
+				"shoot_controller": "controller.animation.arsenal.shoot_controller",
+				"shoot_controller_tp": "controller.animation.arsenal.shoot_controller_tp"
+			},
+			"particle_effects": {
+				"flash": "arsenal:flash"
+			},
+			"scripts": {
+				"animate": [
+					{ "first_person_hold": "c.is_first_person" },
+					{ "third_person_hold": "!c.is_first_person"},
+					{ "ads_controller": "c.is_first_person" },
+					{ "shoot_controller": "c.is_first_person" },
+					{ "shoot_controller_tp": "!c.is_first_person" },
+					{ "first_person_fix": "c.is_first_person" }
+				]
+			}
+		}
+	}
+}

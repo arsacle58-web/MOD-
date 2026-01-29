@@ -1,0 +1,1044 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "arsenal:bullet",
+			"runtime_identifier": "minecraft:snowball",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"arsenal:despawn": {
+				"minecraft:instant_despawn": {}
+			},
+			"arsenal:damage_1": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 1,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_2": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 2,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_3": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 3,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_4": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 4,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_5": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 5,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_6": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 6,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_7": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 7,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_8": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 8,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_9": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 9,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_10": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 10,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_11": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 11,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_12": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 12,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_13": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 13,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_14": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 14,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_15": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 15,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_16": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 16,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_17": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 17,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_18": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 18,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_19": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 19,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_20": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 20,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_21": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 21,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_22": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 22,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_23": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 23,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_24": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 24,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_25": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 25,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_26": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 26,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_27": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 27,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_28": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 28,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_29": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 29,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_30": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 30,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [ "arsenal:bullet" ]
+			},
+			"minecraft:collision_box": {
+				"width": 0.1,
+				"height": 0.1
+			},
+			"minecraft:break_blocks": {
+				"breakable_blocks": [
+					"glass_pane","white_stained_glass_pane", "light_gray_stained_glass_pane", "gray_stained_glass_pane", "black_stained_glass_pane", "brown_stained_glass_pane", "red_stained_glass_pane", "orange_stained_glass_pane", "yellow_stained_glass_pane", "lime_stained_glass_pane", "green_stained_glass_pane", "cyan_stained_glass_pane", "light_blue_stained_glass_pane", "blue_stained_glass_pane", "purple_stained_glass_pane", "magenta_stained_glass_pane", "pink_stained_glass_pane",
+					"glass","stained_glass",
+					"pumpkin", "lit_pumpkin", "carved_pumpkin", "melon_block",
+					"sea_lantern"
+				]
+			},
+			"minecraft:timer": {
+				"time": 1,
+				"looping": true,
+				"time_down_event": {
+					"event": "arsenal:despawn",
+					"target": "self"
+				}
+			},
+			"minecraft:despawn": {
+				"despawn_from_inactivity": true,
+				"filters": [ { "all_of": [
+					{ "test": "distance_to_nearest_player", "operator": ">", "value": 128 },
+					{ "test": "inactivity_timer", "operator": ">", "value": 1 }
+				] } ]
+			},
+			"minecraft:physics": {},
+			"minecraft:conditional_bandwidth_optimization": {}
+		},
+		"events": {
+			"arsenal:despawn": { "add": { "component_groups": [ "arsenal:despawn" ] } },
+			"arsenal:damage_1": { "add": { "component_groups": [ "arsenal:damage_1" ] } },
+			"arsenal:damage_2": { "add": { "component_groups": [ "arsenal:damage_2" ] } },
+			"arsenal:damage_3": { "add": { "component_groups": [ "arsenal:damage_3" ] } },
+			"arsenal:damage_4": { "add": { "component_groups": [ "arsenal:damage_4" ] } },
+			"arsenal:damage_5": { "add": { "component_groups": [ "arsenal:damage_5" ] } },
+			"arsenal:damage_6": { "add": { "component_groups": [ "arsenal:damage_6" ] } },
+			"arsenal:damage_7": { "add": { "component_groups": [ "arsenal:damage_7" ] } },
+			"arsenal:damage_8": { "add": { "component_groups": [ "arsenal:damage_8" ] } },
+			"arsenal:damage_9": { "add": { "component_groups": [ "arsenal:damage_9" ] } },
+			"arsenal:damage_10": { "add": { "component_groups": [ "arsenal:damage_10" ] } },
+			"arsenal:damage_11": { "add": { "component_groups": [ "arsenal:damage_11" ] } },
+			"arsenal:damage_12": { "add": { "component_groups": [ "arsenal:damage_12" ] } },
+			"arsenal:damage_13": { "add": { "component_groups": [ "arsenal:damage_13" ] } },
+			"arsenal:damage_14": { "add": { "component_groups": [ "arsenal:damage_14" ] } },
+			"arsenal:damage_15": { "add": { "component_groups": [ "arsenal:damage_15" ] } },
+			"arsenal:damage_16": { "add": { "component_groups": [ "arsenal:damage_16" ] } },
+			"arsenal:damage_17": { "add": { "component_groups": [ "arsenal:damage_17" ] } },
+			"arsenal:damage_18": { "add": { "component_groups": [ "arsenal:damage_18" ] } },
+			"arsenal:damage_19": { "add": { "component_groups": [ "arsenal:damage_19" ] } },
+			"arsenal:damage_20": { "add": { "component_groups": [ "arsenal:damage_20" ] } },
+			"arsenal:damage_21": { "add": { "component_groups": [ "arsenal:damage_21" ] } },
+			"arsenal:damage_22": { "add": { "component_groups": [ "arsenal:damage_22" ] } },
+			"arsenal:damage_23": { "add": { "component_groups": [ "arsenal:damage_23" ] } },
+			"arsenal:damage_24": { "add": { "component_groups": [ "arsenal:damage_24" ] } },
+			"arsenal:damage_25": { "add": { "component_groups": [ "arsenal:damage_25" ] } },
+			"arsenal:damage_26": { "add": { "component_groups": [ "arsenal:damage_26" ] } },
+			"arsenal:damage_27": { "add": { "component_groups": [ "arsenal:damage_27" ] } },
+			"arsenal:damage_28": { "add": { "component_groups": [ "arsenal:damage_28" ] } },
+			"arsenal:damage_29": { "add": { "component_groups": [ "arsenal:damage_29" ] } },
+			"arsenal:damage_30": { "add": { "component_groups": [ "arsenal:damage_30" ] } }
+		}
+	}
+}

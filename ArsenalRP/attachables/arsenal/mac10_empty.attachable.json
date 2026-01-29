@@ -1,0 +1,49 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "arsenal:mac10_empty",
+			"render_controllers": ["controller.render.default"],
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/arsenal/mac10"
+			},
+			"geometry": {
+				"default": "geometry.arsenal.mac10"
+			},
+			"animations": {
+				"first_person_hold": "animation.arsenal.mac10.first_person_hold",
+				"third_person_hold": "animation.arsenal.mac10.third_person_hold",
+				"first_person_fix": "animation.arsenal.mac10.first_person_fix",
+				"reload": "animation.arsenal.mac10.reload",
+				"reload_controller": "controller.animation.arsenal.reload_controller",
+				"ads_start": "animation.arsenal.mac10.ads_start",
+				"ads_keep": "animation.arsenal.mac10.ads_keep",
+				"ads_end": "animation.arsenal.mac10.ads_end",
+				"ads_controller": "controller.animation.arsenal.ads_controller"
+			},
+			"scripts": {
+				"initialize": [
+					"v.has_item = 0;"
+				],
+				"pre_animation": [
+					"t.val = 0;",
+					"t.i = 0;",
+					"loop(9, { t.val = q.is_item_name_any('slot.hotbar', t.i, 'arsenal:ammo_assault_rifle'); t.val ? break; t.i = t.i + 1; });",
+					"t.j = (1 - t.val) * 0;",
+					"(1 - t.val) ? loop(27, { t.val = q.is_item_name_any('slot.inventory', t.j, 'arsenal:ammo_assault_rifle'); t.val ? break; t.j = t.j + 1; }) : 0;",
+					"v.has_item = t.val;"
+				],
+				"animate": [
+					{ "first_person_hold": "c.is_first_person" },
+					{ "third_person_hold": "!c.is_first_person"},
+					{ "ads_controller": "c.is_first_person" },
+					{ "reload_controller": "c.is_first_person && v.has_item" },
+					{ "first_person_fix": "c.is_first_person" }
+				]
+			}
+		}
+	}
+}

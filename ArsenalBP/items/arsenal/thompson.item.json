@@ -1,0 +1,38 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:item": {
+		"description": {
+			"identifier": "arsenal:thompson",
+			"menu_category": {
+				"category": "equipment",
+				"group": "arsenal:guns"
+			}
+		},
+		"components": {
+			"minecraft:tags": { "tags": [ "arsenal:arsenal_gun", "arsenal:two_hands" ] },
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_modifiers": {
+				"movement_modifier": 1,
+				"use_duration": 1000.0
+			},
+			"minecraft:cooldown": {
+				"category": "arsenal:thompson",
+				"duration": 0.1
+			},
+			"minecraft:use_animation":"none",
+			"minecraft:block_placer": {
+				"block": "arsenal:thompson",
+				"replace_block_item": true
+			},
+			"arsenal:gun": {
+				"projectile": "arsenal:damage_6",
+				"projectileAds": "arsenal:damage_8",
+				"fire_rate": 2,
+				"max_ammo": 30,
+				"sound": "arsenal:thompson_fire",
+				"camerashake": "0.09 0.1 rotational",
+				"camerashakeAds": "0.07 0.1 rotational"
+			}
+		}
+	}
+}

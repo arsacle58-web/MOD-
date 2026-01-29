@@ -1,0 +1,16 @@
+﻿item.arsenal:awm=Rifle de Francotirador AWM
+item.arsenal:mac10=MAC-10
+item.arsenal:revolver=Revólver
+item.arsenal:rifle_m4a1=M4A1
+item.arsenal:thompson=Thompson SMG
+item.arsenal:ump=UMP-45
+
+item.arsenal:ammo_pistol=Munición de Pistola
+item.arsenal:ammo_assault_rifle=Munición de Rifle de Asalto
+item.arsenal:ammo_rifle=Munición de Rifle
+
+entity.arsenal:bullet.name=Bala
+%entity.arsenal:bullet.name=Bala
+
+actionbar.arsenal.no_ammo=Sin munición
+actionbar.arsenal.ammo=Munición: %1
