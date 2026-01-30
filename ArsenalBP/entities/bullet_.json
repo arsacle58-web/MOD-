@@ -971,6 +971,70 @@
 					"liquid_inertia": 0.5,
 					"offset": [ 0, 0, 0 ]
 				}
+			},
+			"arsenal:damage_31": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 80,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
+			},
+			"arsenal:damage_32": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 120,
+							"knockback": false,
+							"destroy_on_hit": true,
+							"filter": "arsenal:bullet"
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "arsenal:despawn",
+								"subject": "self"
+							}
+						},
+						"stick_in_ground": {
+							"shake_time": 0.1
+						}
+					},
+					"filter": "arsenal:bullet",
+          			"anchor": 1,
+					"gravity": 0.005,
+					"power": 5,
+					"inertia": 1,
+					"destroy_on_hurt": true,
+					"hit_nearest_passenger": true,
+					"knockback": false,
+					"liquid_inertia": 0.5,
+					"offset": [ 0, 0, 0 ]
+				}
 			}
 		},
 		"components": {
@@ -1038,7 +1102,9 @@
 			"arsenal:damage_27": { "add": { "component_groups": [ "arsenal:damage_27" ] } },
 			"arsenal:damage_28": { "add": { "component_groups": [ "arsenal:damage_28" ] } },
 			"arsenal:damage_29": { "add": { "component_groups": [ "arsenal:damage_29" ] } },
-			"arsenal:damage_30": { "add": { "component_groups": [ "arsenal:damage_30" ] } }
+			"arsenal:damage_30": { "add": { "component_groups": [ "arsenal:damage_30" ] } },
+			"arsenal:damage_31": { "add": { "component_groups": [ "arsenal:damage_31" ] } },
+			"arsenal:damage_32": { "add": { "component_groups": [ "arsenal:damage_32" ] } }
 		}
 	}
 }

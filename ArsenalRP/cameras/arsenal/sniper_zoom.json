@@ -1,0 +1,8 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:camera_preset": {
+		"identifier": "arsenal:sniper_zoom",
+		"inherit_from": "minecraft:first_person",
+		"field_of_view": 20.0
+	}
+}

@@ -4,7 +4,7 @@
 		"description": "Arsenal Add-On for Minecraft Bedrock [Behavior Pack] By EndXenoc & Cerealdrop54",
 		"name": "Arsenal Add-On Behavior pack",
 		"uuid": "bce57f0c-9973-4c3e-9637-792f489839f3",
-		"version": [ 1, 0, 1 ],
+		"version": [ 1, 0, 2 ],
 		"min_engine_version": [ 1, 21, 90 ]
 	},
 	"modules": [
@@ -12,21 +12,21 @@
 			"description": "data",
 			"type": "data",
 			"uuid": "1ca1b316-8621-40cc-a95b-b153bdfac115",
-			"version": [ 1, 0, 1 ]
+			"version": [ 1, 0, 2 ]
 		},
 		{
 			"description": "script",
 			"language": "javascript",
 			"type": "script",
 			"uuid": "5ebd8587-1cf0-44d6-bcee-ae3f93d74f51",
-			"version": [ 1, 0, 1 ],
+			"version": [ 1, 0, 2 ],
 			"entry": "scripts/arsenal/main.js"
 		}
 	],
 	"dependencies": [
 		{
 			"uuid": "dd6ef6ab-2c01-402c-ac19-1471323b4d1e",
-			"version": [ 1, 0, 1 ]
+			"version": [ 1, 0, 2 ]
 		},
 		{
 			"module_name": "@minecraft/server",

@@ -340,14 +340,27 @@ system.runTimeout(() => {
         for (const player of world.getPlayers()) {
             if (!player.isValid) continue;
             const item = player.getComponent("equippable").getEquipment(EquipmentSlot.Mainhand);
-            if (!item) continue;
-            if (item.typeId === "arsenal:awm" && player.isSneaking && !player.hasTag("arsenal:zoom")) {
+            if (!item) {
+                if (player.hasTag("arsenal:zoom")) {
+                    player.removeTag("arsenal:zoom");
+                    player.removeEffect("slowness");
+                    player.runCommand("camera @s clear");
+                }
+                continue;
+            }
+            const isSniper = (item.typeId === "arsenal:awm" || item.typeId === "arsenal:awm_epico");
+            if (isSniper && player.isSneaking && !player.hasTag("arsenal:zoom")) {
                 player.addTag("arsenal:zoom");
-                player.addEffect("slowness", 2000000, { amplifier: 7, showParticles: false });
-            } else if (player.hasTag("arsenal:zoom") && (!player.isSneaking || item.typeId !== "arsenal:awm")) {
+                player.addEffect("slowness", 2000000, { amplifier: 1, showParticles: false });
+                player.runCommand("camera @s fov_set 10 0.05");
+            } 
+            else if (player.hasTag("arsenal:zoom") && (!player.isSneaking || !isSniper)) {
                 player.removeTag("arsenal:zoom");
                 player.removeEffect("slowness");
+                player.runCommand("camera @s clear");
             }
+
+            // Animaciones originales
             if (tick % 5 === 0) {
                 if (item.hasTag("arsenal:two_hands")) {
                     player.playAnimation("animation.arsenal.2_hands.third_person", { stopExpression: "!q.equipped_item_any_tag('slot.weapon.mainhand','arsenal:two_hands')" });

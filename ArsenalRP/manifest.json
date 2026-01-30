@@ -4,7 +4,7 @@
 		"description": "Arsenal Add-On for Minecraft Bedrock [Recource Pack] By EndXenoc & Cerealdrop54",
 		"name": "Arsenal Add-On Resource pack",
 		"uuid": "dd6ef6ab-2c01-402c-ac19-1471323b4d1e",
-		"version": [ 1, 0, 1 ],
+		"version": [ 1, 0, 2 ],
 		"min_engine_version": [ 1, 21, 90 ]
 	},
 	"modules": [
@@ -12,13 +12,13 @@
 			"description": "resources",
 			"type": "resources",
 			"uuid": "b69ac997-ab22-4e53-8a46-cf3c4d777910",
-			"version": [ 1, 0, 1 ]
+			"version": [ 1, 0, 2 ]
 		}
 	],
 	"dependencies": [
 		{
 			"uuid": "bce57f0c-9973-4c3e-9637-792f489839f3",
-			"version": [ 1, 0, 1 ]
+			"version": [ 1, 0, 2 ]
 		}
 	],
 	"metadata": {

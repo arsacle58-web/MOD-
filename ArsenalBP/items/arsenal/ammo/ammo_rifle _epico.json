@@ -1,0 +1,16 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:item": {
+		"description": {
+			"identifier": "arsenal:ammo_rifle_epico",
+			"menu_category": {
+				"category": "equipment",
+				"group": "arsenal:guns"
+			}
+		},
+		"components": {
+			"minecraft:icon": "arsenal:ammo_rifle",
+			"minecraft:max_stack_size": 32
+		}
+	}
+}
